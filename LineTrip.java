@@ -1,9 +1,9 @@
 import java.util.*;
 public class LineTrip {
     public static void main(String [] args){
-Scanner sc=new Scanner(System.in);
+          Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
-        int max=Integer.MIN_VALUE;
+      
         while(t-->0)
         {
             int last=0;
@@ -15,6 +15,7 @@ Scanner sc=new Scanner(System.in);
                 arr[i]=sc.nextInt();
 
             }
+            int max=Integer.MIN_VALUE;
 
             for(int i=0;i<arr.length;i++)
             {
@@ -23,9 +24,9 @@ Scanner sc=new Scanner(System.in);
 
             }
             max=Math.max(max,2*(x-last));
-
+            System.out.println(max);
         }
-        System.out.println(max);
+        
     }
     
 }
